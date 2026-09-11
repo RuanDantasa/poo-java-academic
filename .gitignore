@@ -1,0 +1,9 @@
+# Ignorar arquivos compilados do Java
+*.class
+bin/
+out/
+
+# Ignorar configurações do VS Code e IDEs
+.vscode/
+.idea/
+*.iml
