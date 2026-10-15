@@ -1,5 +1,7 @@
 package poo_lista02_unidade1;
 
+
+// Classe RegistroAcademico
 public class RegistroAcademico {
     String nome;
     String matricula;
@@ -16,5 +18,17 @@ public class RegistroAcademico {
 
     double calculaMensalidade(){
         return (100 * codigoCurso * percentualDeCobranca);
+    }
+
+    
+    // TestaRegistroAcademico
+    public static void main(String[] args) {
+        RegistroAcademico michael = new RegistroAcademico();
+
+        michael.inicializaRegistroAcademico("Michael", "34980030",
+         2, 1.0);
+    
+        System.out.println("Mensalidade: " + michael.calculaMensalidade());
+        
     }
 }

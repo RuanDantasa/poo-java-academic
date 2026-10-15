@@ -1,5 +1,7 @@
 package poo_lista02_unidade1;
 
+
+// EventoAcademico
 public class EventoAcademico {
     String nomeDoEvento;
     String localDoEvento;
@@ -17,4 +19,12 @@ public class EventoAcademico {
         System.out.println("Numero de participacao: " + numeroDeParticipacao);
     }
 
+
+    // TestaEventoAcademico
+    public static void main(String[] args) {
+        EventoAcademico e1 = new EventoAcademico("ECOP" , "Ufersa",
+        100);
+    
+        e1.mostraEvento();
+    }
 }

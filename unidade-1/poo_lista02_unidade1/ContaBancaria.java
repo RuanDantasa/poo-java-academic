@@ -1,5 +1,9 @@
 package poo_lista02_unidade1;
 
+import java.util.Scanner;
+
+
+// ContaBancaria
 public class ContaBancaria {
     private String nome;
     private double saldo;
@@ -53,5 +57,22 @@ public class ContaBancaria {
         } else { 
             System.out.println("Tipo de conta: Padrao");
         }
+    }
+
+    // TestaContaBancaria
+    public static void main(String[] args) {
+        Scanner ent = new Scanner(System.in);
+        ContaBancaria c1 = new ContaBancaria("Joao");
+        ContaBancaria c2 = new ContaBancaria("Ruan", 200.0, true);
+        ContaBancaria c3 = new ContaBancaria(null, 0, false);
+        c1.mostraDados();
+        System.out.println();
+        c2.mostraDados();
+
+        System.out.println("Informe o nome da conta:" );
+        double nome = ent.nextDouble();
+        c3.setSaldo(nome);
+        System.out.println("Saldo da conta: " + c3.getSaldo());
+        
     }
 }
